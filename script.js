@@ -39,9 +39,15 @@ stopHearts()
 noButton.onmouseover = function(){
 
 moveNoButton()
-
 growYesButton()
+increaseDifficulty()
 
+}
+
+noButton.ontouchstart = function(){
+
+moveNoButton()
+growYesButton()
 increaseDifficulty()
 
 }
