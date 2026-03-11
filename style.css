@@ -1,0 +1,538 @@
+/* ================================================= */
+/* RESET                                             */
+/* ================================================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* ================================================= */
+/* BODY                                              */
+/* ================================================= */
+
+body{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+font-family:Arial, Helvetica, sans-serif;
+
+background:linear-gradient(135deg,#ff4e8a,#ff9ab3);
+
+overflow:hidden;
+
+color:white;
+
+}
+
+/* ================================================= */
+/* CONTAINER                                         */
+/* ================================================= */
+
+.container{
+
+text-align:center;
+
+padding:40px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,0.1);
+
+backdrop-filter:blur(10px);
+
+}
+
+/* ================================================= */
+/* TITLE                                             */
+/* ================================================= */
+
+.title{
+
+font-size:60px;
+
+margin-bottom:20px;
+
+animation:pulse 2s infinite;
+
+}
+
+/* ================================================= */
+/* SUBTITLE                                          */
+/* ================================================= */
+
+.subtitle{
+
+font-size:18px;
+
+opacity:0.9;
+
+}
+
+/* ================================================= */
+/* BUTTON AREA                                       */
+/* ================================================= */
+
+.buttons{
+
+margin-top:30px;
+
+}
+
+/* ================================================= */
+/* BUTTON BASE                                       */
+/* ================================================= */
+
+button{
+
+padding:15px 35px;
+
+font-size:22px;
+
+border:none;
+
+border-radius:12px;
+
+cursor:pointer;
+
+margin:10px;
+
+transition:0.3s;
+
+}
+
+/* ================================================= */
+/* YES BUTTON                                        */
+/* ================================================= */
+
+#yes{
+
+background:#00ff9d;
+
+color:black;
+
+}
+
+/* hover */
+
+#yes:hover{
+
+transform:scale(1.1);
+
+box-shadow:0 0 20px #00ff9d;
+
+}
+
+/* ================================================= */
+/* NO BUTTON                                         */
+/* ================================================= */
+
+#no{
+
+background:#ff3b3b;
+
+color:white;
+
+position:absolute;
+
+}
+
+/* hover */
+
+#no:hover{
+
+background:#ff0000;
+
+}
+
+/* ================================================= */
+/* PULSE ANIMATION                                   */
+/* ================================================= */
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.1);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* ================================================= */
+/* HEART ANIMATION                                   */
+/* ================================================= */
+
+.heart{
+
+position:absolute;
+
+color:white;
+
+font-size:20px;
+
+animation:fall 6s linear infinite;
+
+}
+
+/* ================================================= */
+/* FALL ANIMATION                                    */
+/* ================================================= */
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(-10vh);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(110vh);
+
+opacity:0;
+
+}
+
+}
+
+/* ================================================= */
+/* DECORATIVE CIRCLES                                */
+/* ================================================= */
+
+.circle{
+
+position:absolute;
+
+width:200px;
+
+height:200px;
+
+border-radius:50%;
+
+background:rgba(255,255,255,0.1);
+
+filter:blur(40px);
+
+}
+
+/* circle positions */
+
+.circle:nth-child(1){
+
+top:10%;
+
+left:10%;
+
+}
+
+.circle:nth-child(2){
+
+top:70%;
+
+left:20%;
+
+}
+
+.circle:nth-child(3){
+
+top:20%;
+
+right:10%;
+
+}
+
+.circle:nth-child(4){
+
+bottom:10%;
+
+right:20%;
+
+}
+
+/* ================================================= */
+/* FOOTER                                            */
+/* ================================================= */
+
+.footer{
+
+position:absolute;
+
+bottom:10px;
+
+font-size:14px;
+
+opacity:0.7;
+
+}
+
+/* ================================================= */
+/* DECORATION LINES                                  */
+/* ================================================= */
+
+.decor-line{
+
+width:100px;
+
+height:3px;
+
+background:white;
+
+margin:5px auto;
+
+opacity:0.4;
+
+}
+
+/* ================================================= */
+/* EXTRA UTILITIES                                   */
+/* ================================================= */
+
+.text-center{
+text-align:center;
+}
+
+.mt-10{
+margin-top:10px;
+}
+
+.mt-20{
+margin-top:20px;
+}
+
+.mt-30{
+margin-top:30px;
+}
+
+.p-10{
+padding:10px;
+}
+
+.p-20{
+padding:20px;
+}
+
+/* ================================================= */
+/* EXTRA BACKGROUND EFFECTS                          */
+/* ================================================= */
+
+.bg-blur{
+
+position:absolute;
+
+width:300px;
+
+height:300px;
+
+background:#ffffff33;
+
+border-radius:50%;
+
+filter:blur(80px);
+
+}
+
+/* positions */
+
+.bg-blur.one{
+top:5%;
+left:40%;
+}
+
+.bg-blur.two{
+bottom:10%;
+right:30%;
+}
+
+/* ================================================= */
+/* CARD STYLE                                        */
+/* ================================================= */
+
+.card{
+
+background:rgba(255,255,255,0.2);
+
+padding:20px;
+
+border-radius:15px;
+
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+
+}
+
+/* ================================================= */
+/* CARD HOVER                                        */
+/* ================================================= */
+
+.card:hover{
+
+transform:translateY(-5px);
+
+transition:0.3s;
+
+}
+
+/* ================================================= */
+/* EXTRA BUTTON STYLE                                */
+/* ================================================= */
+
+.btn-round{
+
+border-radius:50px;
+
+}
+
+/* ================================================= */
+/* SHADOW UTIL                                       */
+/* ================================================= */
+
+.shadow{
+
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+/* ================================================= */
+/* RESPONSIVE                                        */
+/* ================================================= */
+
+@media (max-width:768px){
+
+.title{
+
+font-size:40px;
+
+}
+
+button{
+
+font-size:18px;
+
+padding:12px 25px;
+
+}
+
+}
+
+/* ================================================= */
+/* EXTRA SPACE FOR PROJECT SIZE                      */
+/* ================================================= */
+
+.extra1{}
+.extra2{}
+.extra3{}
+.extra4{}
+.extra5{}
+.extra6{}
+.extra7{}
+.extra8{}
+.extra9{}
+.extra10{}
+.extra11{}
+.extra12{}
+.extra13{}
+.extra14{}
+.extra15{}
+.extra16{}
+.extra17{}
+.extra18{}
+.extra19{}
+.extra20{}
+.extra21{}
+.extra22{}
+.extra23{}
+.extra24{}
+.extra25{}
+.extra26{}
+.extra27{}
+.extra28{}
+.extra29{}
+.extra30{}
+.extra31{}
+.extra32{}
+.extra33{}
+.extra34{}
+.extra35{}
+.extra36{}
+.extra37{}
+.extra38{}
+.extra39{}
+.extra40{}
+.extra41{}
+.extra42{}
+.extra43{}
+.extra44{}
+.extra45{}
+.extra46{}
+.extra47{}
+.extra48{}
+.extra49{}
+.extra50{}
+.extra51{}
+.extra52{}
+.extra53{}
+.extra54{}
+.extra55{}
+.extra56{}
+.extra57{}
+.extra58{}
+.extra59{}
+.extra60{}
+.extra61{}
+.extra62{}
+.extra63{}
+.extra64{}
+.extra65{}
+.extra66{}
+.extra67{}
+.extra68{}
+.extra69{}
+.extra70{}
+.extra71{}
+.extra72{}
+.extra73{}
+.extra74{}
+.extra75{}
+.extra76{}
+.extra77{}
+.extra78{}
+.extra79{}
+.extra80{}
+.extra81{}
+.extra82{}
+.extra83{}
+.extra84{}
+.extra85{}
+.extra86{}
+.extra87{}
+.extra88{}
+.extra89{}
+.extra90{}
+.extra91{}
+.extra92{}
+.extra93{}
+.extra94{}
+.extra95{}
+.extra96{}
+.extra97{}
+.extra98{}
+.extra99{}
+.extra100{}
